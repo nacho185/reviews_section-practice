@@ -187,3 +187,40 @@ section.reviews_container {
     }
   }
 }
+/*media queries*/
+@media (max-width: 1320px) {
+  .reviews_left-container {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (max-width: 1010px) {
+  .reviews_container {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+  .reviews_action-buttons-container {
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  .average_score-stars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .number_of-comments {
+    text-align: center;
+  }
+  .all_stars {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .bar-container {
+    display: none !important;
+  }
+}
+/*end media queries*/
